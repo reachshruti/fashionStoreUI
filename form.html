@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>Indo-Saaj - The latest fashion</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+ <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <!--<a id="logo-container" href="#" class="brand-logo">Indo Saaj</a>-->
+      <p class="brand-logo">Indo-Saaj</p>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="main.html">Home Page</a></li>
+        <li><a href="collections.html">View Collections</a></li>
+        <li><a href="#">Sign Up for Updates</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="main.html">Home Page</a></li>
+        <li><a href="collections.html">View Collections</a></li>
+        <li><a href="#">Sign Up for Updates</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+  <!-- For the heading of the form -->
+  <div class="container">
+    <h4 class="header center teal-text text-lighten-2">PLEASE FILL IN YOUR DETAILS</h4>
+</div>
+  <!-- FOR THE DETAILS OF THE FORM -->
+  <div class="container">
+  <!-- For NAME,LAST NAME,TELEPHONE NUMBER,EMAIL AND FEEDBACK -->
+  <div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s6">
+          <i class="material-icons prefix">account_circle</i>
+          <input placeholder="Your good name :)" id="first_name" type="text" class="validate">
+          <label for="first_name">First Name</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="last_name" type="text" class="validate">
+          <label for="last_name">Last Name</label>
+        </div>
+      </div>
+      <div class="input-field col s6">
+          <i class="material-icons prefix">phone</i>
+          <input id="icon_telephone" type="tel" class="validate">
+          <label for="icon_telephone">Telephone</label>
+        </div>
+ <!-- Modal Structure for asking the user for mobile notifications-->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Mobile Notifications</h4>
+      <p>Do you want to turn on mobile notifications?</p>
+    </div>
+    <div class="modal-footer">
+       <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Disagree</a>
+      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+
+    </div>
+  </div>
+        <!-- data error and data-success attributes set for email to show user the validity of the input -->  
+      <div class="row">
+        <div class="input-field col s6">
+          <input id="email" type="email" class="validate">
+          <label for="email" data-error="The email-id you have entered is wrong" data-success="Yayy! We got your mail id to send you updates.">Email</label>
+        </div>
+      </div>
+      <div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s6">
+          <i class="material-icons prefix">mode_edit</i>
+          <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+          <label for="icon_prefix2">Give us your feedback</label>
+        </div>
+      </div>
+    </form>
+  </div>
+  <!-- Button for the submit -->
+  <button id="sbutton" class="btn waves-effect waves-light disabled" type="submit" name="action">Submit
+    <i class="material-icons right">send</i>
+  </button>
+
+
+
+
+
+    </form><!-- end of the original form -->
+  </div>  
+
+
+  </div><!--div end of the container -->
+         
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>
